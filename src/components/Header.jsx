@@ -21,8 +21,10 @@ const Header = () => {
 
   // Close mobile menu when route changes
   useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location]);
+    if (isMobileMenuOpen) {
+      setTimeout(() => setIsMobileMenuOpen(false), 0);
+    }
+  }, [location, isMobileMenuOpen]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -112,7 +114,7 @@ const Header = () => {
       </header>
 
       {/* Booking Modal */}
-      <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+      <BookingModal key={isBookingOpen ? 'open' : 'closed'} isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     </>
   );
 };

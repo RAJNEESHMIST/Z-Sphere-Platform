@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { X, Calendar, Clock, CheckCircle, User, Phone, FileText } from 'lucide-react';
 import Button from './Button';
 
@@ -12,15 +12,6 @@ const BookingModal = ({ isOpen, onClose }) => {
     purpose: ''
   });
 
-  // Reset state when modal opens
-  useEffect(() => {
-    if (isOpen) {
-      setStep('select-slot');
-      setSelectedSlot(null);
-      setLoading(false);
-      setFormData({ name: '', phone: '', purpose: '' });
-    }
-  }, [isOpen]);
 
   if (!isOpen) return null;
 

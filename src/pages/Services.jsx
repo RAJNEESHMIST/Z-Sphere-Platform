@@ -10,49 +10,6 @@ import service3 from '../assets/service-3.png';
 import service4 from '../assets/service-4.png';
 
 const Services = () => {
-  const services = [
-    {
-      icon: <Activity size={32} />,
-      title: "Home Physiotherapy",
-      description: "Personalized rehabilitation plans delivered in the comfort of your home. We focus on restoring mobility and managing pain effectively.",
-      color: "text-blue-600",
-      bgColor: "bg-blue-100",
-      link: "#"
-    },
-    {
-      icon: <Stethoscope size={32} />,
-      title: "Clinical Guidance",
-      description: "Expert clinical advice for complex cases. We advocate for evidence-based practices to ensure the best patient outcomes.",
-      color: "text-green-600",
-      bgColor: "bg-green-100",
-      link: "#"
-    },
-    {
-      icon: <BookOpen size={32} />,
-      title: "Rehab Education",
-      description: "Workshops, seminars, and resources for physiotherapy professionals looking to upgrade their skills and knowledge.",
-      color: "text-purple-600",
-      bgColor: "bg-purple-100",
-      link: "#"
-    },
-    {
-      icon: <Users size={32} />,
-      title: "Student Mentorship",
-      description: "Dedicated support for students including career guidance, note sharing, and practical training opportunities.",
-      color: "text-orange-600",
-      bgColor: "bg-orange-100",
-      link: "#"
-    },
-    {
-      icon: <Video size={32} />,
-      title: "Online Consultation",
-      description: "Connect with our top experts remotely for initial assessments and follow-ups. Accessible care from anywhere.",
-      color: "text-teal-600",
-      bgColor: "bg-teal-100",
-      link: "#",
-      badge: "Coming Soon"
-    }
-  ];
 
   return (
     <div className="w-full">

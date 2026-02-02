@@ -8,32 +8,6 @@ import expert1 from '../assets/expert-1.png';
 import expert2 from '../assets/expert-2.png';
 import expert3 from '../assets/expert-3.png';
 
-const experts = [
-    {
-        id: 1,
-        name: 'Dr. Alex Smith',
-        role: 'Senior Physiotherapist',
-        image: expert1,
-        specialization: 'Sports Injuries & Orthopedics',
-        bio: 'Dr. Alex has over 10 years of experience helping athletes recover from complex injuries. He specializes in manual therapy and functional rehabilitation.',
-    },
-    {
-        id: 2,
-        name: 'Dr. Sarah Jones',
-        role: 'Clinical Director',
-        image: expert2,
-        specialization: 'Neurological Rehabilitation',
-        bio: 'Dr. Sarah leads our clinical team with a focus on patient-centered care. She has extensive experience in treating stroke survivors and spinal cord injuries.',
-    },
-    {
-        id: 3,
-        name: 'Dr. Mike Chen',
-        role: 'Pediatric Physiotherapist',
-        image: expert3,
-        specialization: 'Pediatric Care',
-        bio: 'Dr. Mike is dedicated to helping children reach their full physical potential. He is an expert in developmental delays and congenital conditions.',
-    },
-];
 
 const Experts = () => {
   return (
