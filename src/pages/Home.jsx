@@ -15,11 +15,11 @@ const Home = () => {
   return (
     <div className="w-full">
       <SEO 
-        title="Home - ZK Rehab Sphere" 
-        description="Reclaim your life with advanced rehabilitation care and expert guidance." 
+        title="ZK Rehab Sphere - Home Visit Physiotherapy" 
+        description="An evidence-based physiotherapy and rehabilitation platform delivering trusted home visit services in Chandigarh, Mohali, Panchkula, Zirakpur & Kharar." 
       />
       {/* SECTION 1: HERO */}
-      <section className="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-32 overflow-hidden">
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl opacity-50"></div>
@@ -27,56 +27,62 @@ const Home = () => {
         <div className="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20 relative z-10">
           {/* Text Content */}
           <div className="lg:w-1/2 text-center lg:text-left fade-in-up">
-            <div className="inline-block px-5 py-2 mb-6 rounded-full bg-gradient-to-r from-blue-50 via-teal-50 to-blue-50 text-secondary-dark font-bold text-xs uppercase tracking-widest shadow-md border border-blue-100 hover:shadow-lg hover:border-blue-200 hover:-translate-y-0.5 transition-all duration-300 cursor-default animate-fade-in-down">
-              Your Health, Our Priority
+            <div className="inline-block px-4 py-2 mb-6 rounded-full bg-gradient-to-r from-blue-50 via-teal-50 to-blue-50 text-secondary-dark font-bold text-[10px] sm:text-xs uppercase tracking-widest shadow-md border border-blue-100 hover:shadow-lg hover:border-blue-200 hover:-translate-y-0.5 transition-all duration-300 cursor-default animate-fade-in-down">
+              Home Visit Physiotherapy Services
             </div>
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold text-primary leading-tight mb-6 tracking-tight group cursor-default">
-              <span className="inline-block transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:text-primary-dark">Find Your Balance.</span> <br className="hidden md:block" />
-              <span className="inline-block text-slate-700 transition-transform duration-300 delay-75 group-hover:-translate-y-0.5">Reclaim Your Life with</span> <br/>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-accent to-secondary bg-[length:200%_auto] animate-gradient inline-block hover:scale-105 transition-transform duration-300 drop-shadow-sm pb-1 mt-1">Advanced Rehab Care</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-6 tracking-tight group cursor-default">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-accent to-secondary bg-[length:200%_auto] animate-gradient inline-block hover:scale-105 transition-transform duration-300 drop-shadow-sm pb-1 mt-1">
+                ZK Rehab Sphere
+              </span>
             </h1>
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-100">
-              Your journey to recovery starts here. We provide world-class physiotherapy, clinical guidance, and educational resources to help you heal stronger and faster.
+            <p className="text-base sm:text-lg text-slate-600 mb-4 leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-100">
+              An evidence-based physiotherapy and rehabilitation platform delivering trusted home visit services and structured clinical learning.
             </p>
-            <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start animate-fade-in-up delay-200 mt-8">
-              <Link to="/contact">
-                <Button className="w-full sm:w-auto text-base font-semibold px-6 py-3.5 bg-gradient-to-r from-secondary to-blue-600 text-white shadow-lg shadow-secondary/40 hover:shadow-secondary/60 hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300 border border-transparent hover:border-white/20 ring-4 ring-transparent hover:ring-secondary/20 relative overflow-hidden group">
-                  <span className="relative z-10">Start Your Rehab Journey</span>
+            <p className="text-sm sm:text-md text-slate-500 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-150 font-medium">
+              Serving Chandigarh, Mohali, Panchkula, Zirakpur & Kharar
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start animate-fade-in-up delay-200 mt-8">
+              <a href="https://wa.me/919430594683" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button className="w-full sm:w-auto text-base font-semibold px-6 py-3.5 bg-none bg-[#25D366] text-white shadow-lg shadow-green-500/40 hover:shadow-green-500/60 hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300 border border-transparent hover:border-white/20 ring-4 ring-transparent hover:ring-green-500/20 relative overflow-hidden group">
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    Book Appointment <span className="text-xs opacity-90 hidden sm:inline">(+91 9430594683)</span>
+                  </span>
                   <div className="absolute inset-0 h-full w-full scale-0 rounded-lg transition-all duration-300 group-hover:scale-100 group-hover:bg-white/10"></div>
                 </Button>
-              </Link>
-              <Link to="/about">
-                <Button className="w-full sm:w-auto text-base font-semibold px-6 py-3.5 bg-white text-secondary-dark border border-slate-200 shadow-md hover:shadow-xl hover:border-secondary hover:bg-slate-50 hover:-translate-y-1 active:scale-95 transition-all duration-300 group">
-                  Learn More <ArrowRight size={18} className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1" />
+              </a>
+              <a href="mailto:zkrehabsphere@gmail.com" className="w-full sm:w-auto">
+                <Button variant="secondary" className="w-full sm:w-auto text-base font-semibold px-6 py-3.5 shadow-md hover:shadow-xl hover:-translate-y-1 active:scale-95 transition-all duration-300 group">
+                  Email Us
                 </Button>
-              </Link>
+              </a>
             </div>
             
-            <div className="mt-10 flex items-center justify-center lg:justify-start gap-8 text-gray-500 text-sm font-medium">
+            <div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-8 text-gray-500 text-sm font-medium">
                <div className="flex items-center gap-2">
-                 <div className="w-2 h-2 rounded-full bg-green-500"></div> Certified Experts
+                 <div className="w-2 h-2 rounded-full bg-green-500"></div> Patients
                </div>
                <div className="flex items-center gap-2">
-                 <div className="w-2 h-2 rounded-full bg-blue-500"></div> Advanced Tech
+                 <div className="w-2 h-2 rounded-full bg-blue-500"></div> Students
                </div>
                <div className="flex items-center gap-2">
-                 <div className="w-2 h-2 rounded-full bg-purple-500"></div> 24/7 Support
+                 <div className="w-2 h-2 rounded-full bg-purple-500"></div> Professionals
                </div>
             </div>
           </div>
           
           {/* Hero Image */}
-          <div className="lg:w-1/2 animate-fade-in-down">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-900/5 transform hover:scale-[1.01] transition-transform duration-500">
-               <img src={heroImg} alt="Physiotherapy Rehabilitation" className="w-full h-auto object-cover" />
+          <div className="w-full lg:w-1/2 animate-fade-in-down px-4 lg:px-0">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-900/5 transform hover:scale-[1.01] transition-transform duration-500 max-h-[300px] sm:max-h-[500px] lg:max-h-full w-full object-cover">
+               <img src={heroImg} alt="Physiotherapy Rehabilitation" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 2: WHAT IS ZK REHAB SPHERE? */}
-      <section className="py-16 lg:py-20 bg-white relative">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+      <section className="py-12 lg:py-20 bg-white relative">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           <div className="lg:w-1/2 order-2 lg:order-1 relative group perspective-1000">
              <div className="absolute inset-0 bg-secondary/10 transform rotate-3 rounded-2xl z-0 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105"></div>
              <div className="bg-slate-50 rounded-2xl overflow-hidden h-96 flex items-center justify-center shadow-soft relative z-10 border border-slate-100 transition-all duration-500 group-hover:shadow-premium group-hover:-translate-y-2">
@@ -108,9 +114,9 @@ const Home = () => {
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent opacity-50"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <SectionTitle title="What We Offer" subtitle="Comprehensive solutions for patients and students alike." className="mb-16" />
+          <SectionTitle title="What We Offer" subtitle="Comprehensive solutions for patients and students alike." className="mb-10 lg:mb-16" />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <Card className="hover:-translate-y-2 group p-6">
               <div className="w-14 h-14 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
                 <Activity size={28} />
@@ -155,7 +161,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <SectionTitle title="Meet Our Experts" subtitle="Guided by experienced professionals." />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-16">
             {[
               { name: "Dr. Alex Smith", role: "Senior Physiotherapist", img: expert1, desc: "Specialist in sports injuries and orthopedic rehabilitation with over 10 years of experience." },
               { name: "Dr. Sarah Jones", role: "Clinical Director", img: expert2, desc: "Expert in neurological rehabilitation and patient care management." },
@@ -198,7 +204,7 @@ const Home = () => {
               <p className="text-slate-400 max-w-2xl mx-auto text-lg">Access our curated collection of articles, guides, and clinical notes.</p>
             </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 text-left">
              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors duration-300">
                 <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400">
                     <Activity size={20} />

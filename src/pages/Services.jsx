@@ -19,9 +19,9 @@ const Services = () => {
       />
 
       {/* HERO SECTION */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+      <section className="relative py-16 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
             {/* Text Content */}
             <div className="lg:w-1/2 text-center lg:text-left animate-fade-in-up">
               <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-xs font-bold tracking-widest uppercase mb-6">
@@ -31,7 +31,7 @@ const Services = () => {
                 Restoring Health, <br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Rebuilding Lives.</span>
               </h1>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 Experience the perfect blend of advanced medical technology and compassionate, hands-on therapy tailored just for you.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
@@ -91,7 +91,7 @@ const Services = () => {
          <div className="container mx-auto px-4">
            <SectionTitle title="What We Provide" subtitle="Explore our wide range of specialized services." />
            
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
              
              {/* Service 1: Home Physiotherapy */}
              <Card className="flex flex-col md:flex-row overflow-hidden group hover:shadow-2xl border-none">

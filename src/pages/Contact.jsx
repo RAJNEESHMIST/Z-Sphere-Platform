@@ -41,7 +41,7 @@ const Contact = () => {
       {/* CONTACT CONTENT SECTION */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-12">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             
             {/* LEFT COLUMN: CONTACT INFO */}
             <div className="lg:w-1/3 space-y-8">
@@ -54,7 +54,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg">Service Area</h4>
-                    <p className="text-gray-600">123 Wellness Blvd, Recovery City, RC 54321</p>
+                    <p className="text-gray-600">Chandigarh, Mohali, Panchkula, Zirakpur & Kharar</p>
                   </div>
                 </Card>
 
@@ -64,8 +64,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg">Email Us</h4>
-                    <p className="text-gray-600">contact@zkrehabsphere.com</p>
-                    <p className="text-gray-500 text-sm mt-1">We rely within 24 hours.</p>
+                    <p className="text-gray-600">zkrehabsphere@gmail.com</p>
+                    <p className="text-gray-500 text-sm mt-1">We reply within 24 hours.</p>
                   </div>
                 </Card>
 
@@ -75,8 +75,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg">Call Us</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-500 text-sm mt-1">Mon-Fri, 9am - 6pm</p>
+                    <p className="text-gray-600">+91 9430594683</p>
+                    <p className="text-gray-500 text-sm mt-1">Mon-Fri, 9am - 7pm</p>
                   </div>
                 </Card>
               </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                         type="tel" 
                         id="phone" 
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition-all"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 98765 43210"
                       />
                   </div>
 

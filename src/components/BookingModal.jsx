@@ -50,10 +50,10 @@ const BookingModal = ({ isOpen, onClose }) => {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl flex flex-col max-h-[90vh] animate-in fade-in zoom-in-95 duration-200">
         
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50/50">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 bg-slate-50/50 shrink-0">
           <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
             <Calendar className="text-primary" size={20} />
             Book Appointment
@@ -67,7 +67,7 @@ const BookingModal = ({ isOpen, onClose }) => {
         </div>
 
         {/* Body */}
-        <div className="p-6">
+        <div className="p-6 overflow-y-auto">
           {step === 'select-slot' && (
             <div>
               <p className="text-slate-600 mb-4 text-sm">Please select a time slot for your consultation.</p>
@@ -173,7 +173,7 @@ const BookingModal = ({ isOpen, onClose }) => {
         
         {/* Footer info */}
         {step !== 'success' && (
-             <div className="bg-slate-50 px-6 py-3 border-t border-slate-100 text-center">
+             <div className="bg-slate-50 px-6 py-3 border-t border-slate-100 text-center shrink-0">
                 <p className="text-xs text-slate-400">Secure booking powered by ZK Rehab Sphere</p>
             </div>
         )}

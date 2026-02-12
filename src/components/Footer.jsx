@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Activity, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowRight } from 'lucide-react';
+import { Activity, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -24,13 +24,13 @@ const Footer = () => {
                 <Facebook size={18} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
                 <Instagram size={18} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
                 <Linkedin size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
+                <Youtube size={18} />
               </a>
             </div>
           </div>
@@ -62,23 +62,23 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-4 text-slate-300 text-sm">
                 <MapPin size={20} className="text-secondary shrink-0 mt-1" />
-                <span>123 Recovery Lane, Health City,<br/>Medical District, NY 10001</span>
+                <span>Chandigarh, Mohali, Panchkula,<br/>Zirakpur & Kharar</span>
               </li>
               <li className="flex items-center gap-4 text-slate-300 text-sm">
                 <Phone size={20} className="text-secondary shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9430594683</span>
               </li>
               <li className="flex items-center gap-4 text-slate-300 text-sm">
                 <Mail size={20} className="text-secondary shrink-0" />
-                <span>contact@zkrehabsphere.com</span>
+                <span>zkrehabsphere@gmail.com</span>
               </li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-lg font-bold mb-6 text-white">Newsletter</h4>
-            <p className="text-slate-300 text-sm mb-4">Subscribe to get the latest health tips and updates.</p>
+            <h4 className="text-lg font-bold mb-6 text-white">Stay Connected</h4>
+            <p className="text-slate-300 text-sm mb-4">Receive rehabilitation insights, clinical articles, and educational updates from ZK Rehab Sphere.</p>
             <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
               <input 
                 type="email" 
@@ -86,7 +86,7 @@ const Footer = () => {
                 className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all placeholder:text-slate-500"
               />
               <button className="w-full bg-secondary hover:bg-secondary-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">
-                Subscribe
+                Get Updates
               </button>
             </form>
           </div>

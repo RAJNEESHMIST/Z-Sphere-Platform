@@ -33,7 +33,7 @@ const Resources = () => {
         <div className="container mx-auto px-4">
           <SectionTitle title="Latest Articles" subtitle="Insights and updates from the world of rehabilitation." />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {[1, 2, 3].map((item) => (
               <Card key={item} className="flex flex-col h-full hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden p-0 border-none group">
                 {/* Blog Image Placeholder */}
@@ -88,7 +88,7 @@ const Resources = () => {
         <div className="container mx-auto px-4">
           <SectionTitle title="Essential Reads" subtitle="Books and guides recommended by our experts." />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {[1, 2, 3, 4].map((item) => (
               <div key={item} className="bg-white p-6 rounded-2xl shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center border border-gray-100 group">
                  {/* Book Cover Placeholder */}

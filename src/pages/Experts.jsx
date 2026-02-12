@@ -20,7 +20,7 @@ const Experts = () => {
         <div className="container mx-auto px-4">
           <SectionTitle title="Our Experts" subtitle="Meet the team dedicated to your recovery." className="mb-12" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Expert 1 */}
             <Card className="text-center group p-0 overflow-hidden border-none hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                  <div className="relative h-72 overflow-hidden">

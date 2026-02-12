@@ -21,10 +21,8 @@ const Header = () => {
 
   // Close mobile menu when route changes
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      setTimeout(() => setIsMobileMenuOpen(false), 0);
-    }
-  }, [location, isMobileMenuOpen]);
+    setIsMobileMenuOpen(false);
+  }, [location]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -42,9 +40,9 @@ const Header = () => {
           isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
         }`}
       >
-        <div className="container mx-auto px-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-2 group">
+          <NavLink to="/" className="flex items-center gap-2 group shrink-0">
             <div className="w-10 h-10 bg-gradient-to-tr from-blue-600 to-teal-400 rounded-full flex items-center justify-center text-white shadow-lg shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-105">
               <HeartPulse size={22} className="group-hover:animate-pulse" />
             </div>
@@ -54,7 +52,7 @@ const Header = () => {
           </NavLink>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
@@ -72,7 +70,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4 shrink-0">
             <Button size="sm" onClick={() => setIsBookingOpen(true)}>Book Appointment</Button>
           </div>
 
@@ -87,7 +85,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-100 shadow-xl p-4 flex flex-col gap-4 animate-in slide-in-from-top-2">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-100 shadow-xl p-4 flex flex-col gap-4 max-h-[80vh] overflow-y-auto z-50">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
