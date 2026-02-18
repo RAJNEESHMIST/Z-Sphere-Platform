@@ -16,7 +16,7 @@ const Experts = () => {
         title="Our Experts - ZK Rehab Sphere" 
         description="Meet our team of experienced and compassionate physiotherapy professionals." 
       />
-      <div className="bg-slate-50 py-12 lg:py-20">
+      <div className="bg-slate-50 pt-8 pb-12 lg:pt-12 lg:pb-20">
         <div className="container mx-auto px-4">
           <SectionTitle title="Our Experts" subtitle="Meet the team dedicated to your recovery." className="mb-12" />
 

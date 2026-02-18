@@ -16,7 +16,7 @@ const Resources = () => {
       />
       
       {/* HERO SECTION */}
-      <section className="relative py-20 lg:py-28 bg-primary overflow-hidden">
+      <section className="relative pt-8 pb-20 lg:pt-12 lg:pb-28 bg-primary overflow-hidden">
          {/* Abstract Background Elements */}
          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl opacity-50"></div>

@@ -20,7 +20,7 @@ const Contact = () => {
       />
       
       {/* HERO SECTION */}
-      <section className="relative py-28 lg:py-36 bg-primary overflow-hidden">
+      <section className="relative pt-8 pb-28 lg:pt-12 lg:pb-36 bg-primary overflow-hidden">
          {/* Background Image */}
          <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-primary/80 z-10 mix-blend-multiply"></div> 

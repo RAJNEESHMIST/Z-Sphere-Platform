@@ -19,7 +19,7 @@ const Home = () => {
         description="An evidence-based physiotherapy and rehabilitation platform delivering trusted home visit services in Chandigarh, Mohali, Panchkula, Zirakpur & Kharar." 
       />
       {/* SECTION 1: HERO */}
-      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-32 overflow-hidden">
+      <section className="relative pt-4 pb-16 lg:pt-8 lg:pb-32 overflow-hidden">
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl opacity-50"></div>
@@ -28,7 +28,7 @@ const Home = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 text-center lg:text-left fade-in-up">
             <div className="inline-block px-4 py-2 mb-6 rounded-full bg-gradient-to-r from-blue-50 via-teal-50 to-blue-50 text-secondary-dark font-bold text-[10px] sm:text-xs uppercase tracking-widest shadow-md border border-blue-100 hover:shadow-lg hover:border-blue-200 hover:-translate-y-0.5 transition-all duration-300 cursor-default animate-fade-in-down">
-              Home Visit Physiotherapy Services
+              Evidence-Based Physiotherapy & Rehabilitation Platform
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-6 tracking-tight group cursor-default">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-accent to-secondary bg-[length:200%_auto] animate-gradient inline-block hover:scale-105 transition-transform duration-300 drop-shadow-sm pb-1 mt-1">
@@ -36,7 +36,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mb-4 leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-100">
-              An evidence-based physiotherapy and rehabilitation platform delivering trusted home visit services and structured clinical learning.
+              ZK Rehab Sphere is a structured rehabilitation platform delivering professional home-visit physiotherapy services, clinical consultation, and evidence-oriented learning resources.
             </p>
             <p className="text-sm sm:text-md text-slate-500 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-150 font-medium">
               Serving Chandigarh, Mohali, Panchkula, Zirakpur & Kharar
@@ -96,10 +96,12 @@ const Home = () => {
              </div>
           </div>
           <div className="lg:w-1/2 order-1 lg:order-2">
-            <SectionTitle title="Who We Are" subtitle="Dedicated to your health." />
-            <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-6 leading-tight">Empowering Recovery Through <br/><span className="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent">Science & Compassion</span></h3>
+            <SectionTitle title="About ZK Rehab Sphere" subtitle="A Structured Platform for Modern Rehabilitation & Clinical Excellence." />
+            <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-6 leading-tight">Redefining Rehabilitation with <br/><span className="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent">Structure, Science & Integrity</span></h3>
             <p className="text-slate-600 mb-8 leading-relaxed text-lg transform transition-all duration-500 hover:text-slate-800">
-              ZK Rehab Sphere is dedicated to bridging the gap between clinical excellence and accessible patient care. We combine state-of-the-art physiotherapy techniques with a compassionate approach to ensure the best outcomes for our patients.
+              ZK Rehab Sphere is an evolving rehabilitation platform designed to integrate structured home-based physiotherapy services, clinical guidance, and educational resources. 
+              <br/><br/>
+              Our focus is not only on recovery — but on building measurable outcomes, long-term functional independence, and professional growth within the rehabilitation ecosystem.
             </p>
             <Link to="/about">
               <Button size="lg" className="shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">About Us <ArrowRight size={20} className="ml-2 inline-block transition-transform group-hover:translate-x-1" /></Button>
@@ -114,7 +116,7 @@ const Home = () => {
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent opacity-50"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <SectionTitle title="What We Offer" subtitle="Comprehensive solutions for patients and students alike." className="mb-10 lg:mb-16" />
+          <SectionTitle title="Our Core Services" subtitle="Integrated rehabilitation services for patients, learners, and professionals." className="mb-10 lg:mb-16" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <Card className="hover:-translate-y-2 group p-6">
