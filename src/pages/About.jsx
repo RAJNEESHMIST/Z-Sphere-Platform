@@ -31,37 +31,42 @@ const About = () => {
       {/* SECTION 2: WHO WE ARE (Vision, Mission, Why) */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div className="space-y-4 px-4">
-               <div className="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mx-auto">
-                 <Target size={32} />
-               </div>
-               <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
-               <p className="text-gray-600 leading-relaxed">
-                 To be the global standard in accessible, evidence-based rehabilitation, fostering a world where quality care is within everyone's reach.
-               </p>
-            </div>
-            <div className="space-y-4 px-4">
-               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
-                 <Users size={32} />
-               </div>
-               <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
-               <p className="text-gray-600 leading-relaxed">
-                 To provide high-quality home visit physiotherapy services across the Chandigarh Tricity region while developing educational resources that support clinical clarity and professional growth. We aim to bridge patient care and structured learning under one integrated platform.
-               </p>
-            </div>
-            <div className="space-y-4 px-4">
-               <div className="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto">
-                 <Heart size={32} />
-               </div>
-               <h3 className="text-2xl font-bold text-gray-900">Why We Exist</h3>
-               <p className="text-gray-600 leading-relaxed">
-                 Modern rehabilitation often faces a disconnect between theoretical knowledge and real-world clinical practice. ZK Rehab Sphere exists to bridge that gap by combining hands-on physiotherapy services with structured, practical learning resources.
-                 <br/><br/>
-                 We believe rehabilitation should be guided by science, strengthened by clinical reasoning, and delivered with long-term commitment.
-               </p>
-            </div>
-          </div>
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+             
+             {/* Vision Card */}
+             <Card className="px-6 py-10 h-full border-t-4 border-blue-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner group-hover:scale-110 transition-transform duration-500">
+                  <Target size={36} className="drop-shadow-sm" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Our Vision</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  To be the global standard in accessible, evidence-based rehabilitation, fostering a world where quality care is within everyone's reach.
+                </p>
+             </Card>
+
+             {/* Mission Card */}
+             <Card className="px-6 py-10 h-full border-t-4 border-green-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-50 to-green-100 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner group-hover:scale-110 transition-transform duration-500">
+                  <Users size={36} className="drop-shadow-sm" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">Our Mission</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  To provide high-quality home visit physiotherapy services across the Chandigarh Tricity region while developing educational resources that support clinical clarity and professional growth.
+                </p>
+             </Card>
+
+             {/* Purpose Card */}
+             <Card className="px-6 py-10 h-full border-t-4 border-purple-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-50 to-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner group-hover:scale-110 transition-transform duration-500">
+                  <Heart size={36} className="drop-shadow-sm" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">Why We Exist</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We exist to bridge the gap between theoretical knowledge and real-world practice by combining hands-on physiotherapy services with structured, practical learning resources.
+                </p>
+             </Card>
+
+           </div>
         </div>
       </section>
 
@@ -118,7 +123,7 @@ const About = () => {
 
                 {/* Founder Content */}
                 <div className="md:w-2/3 lg:w-2/3 p-8 md:p-10 lg:p-16 flex flex-col justify-center">
-                   <h2 className="text-3xl md:text-4xl font-bold mb-2">Dr. Sajid Khan</h2>
+                   <h2 className="text-3xl md:text-4xl font-bold mb-2">Sajid Khan</h2>
                    <p className="text-accent font-semibold uppercase tracking-wider mb-8">Founder, ZK Rehab Sphere <br/> Physiotherapy Professional</p>
                    
                    <div className="space-y-6 text-lg leading-relaxed text-blue-50">

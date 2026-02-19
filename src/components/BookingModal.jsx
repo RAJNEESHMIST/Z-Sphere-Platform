@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 import { X, Calendar, Clock, CheckCircle, User, Phone, FileText } from 'lucide-react';
 import Button from './Button';
 
+import { jsPDF } from 'jspdf';
+
 const BookingModal = ({ isOpen, onClose }) => {
   const [step, setStep] = useState('select-slot'); // 'select-slot', 'details', 'success'
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
+    age: '',
     phone: '',
+    address: '',
     purpose: ''
   });
 
@@ -34,10 +38,51 @@ const BookingModal = ({ isOpen, onClose }) => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate backend call
+    // 1. Generate PDF
+    const doc = new jsPDF();
+    
+    // Add Logo or Header (Text for now)
+    doc.setFontSize(22);
+    doc.setTextColor(40, 100, 255); // Blue
+    doc.text("ZK Rehab Sphere", 20, 20);
+    
+    doc.setFontSize(16);
+    doc.setTextColor(0, 0, 0);
+    doc.text("Appointment Confirmation", 20, 35);
+    
+    doc.setFontSize(12);
+    doc.text(`Name: ${formData.name}`, 20, 50);
+    doc.text(`Age: ${formData.age}`, 20, 60);
+    doc.text(`Phone: ${formData.phone}`, 20, 70);
+    doc.text(`Address: ${formData.address}`, 20, 80);
+    doc.text(`Date: ${selectedSlot?.date}`, 20, 90);
+    doc.text(`Time: ${selectedSlot?.time}`, 20, 100);
+    
+    if (formData.purpose) {
+        doc.text("Purpose/Condition:", 20, 115);
+        const splitPurpose = doc.splitTextToSize(formData.purpose, 170);
+        doc.text(splitPurpose, 20, 125);
+    }
+    
+    doc.setFontSize(10);
+    doc.setTextColor(150);
+    doc.text("Thank you for choosing ZK Rehab Sphere.", 20, 150);
+    
+    // Save the PDF
+    doc.save("ZK-Rehab-Appointment.pdf");
+
+    // 2. Prepare WhatsApp 
+    const phoneNumber = "919430594683"; // Verified from WhatsAppButton.jsx
+    const message = `*New Appointment Request* \n\n*Name:* ${formData.name}\n*Age:* ${formData.age}\n*Phone:* ${formData.phone}\n*Address:* ${formData.address}\n*Date:* ${selectedSlot?.date}\n*Time:* ${selectedSlot?.time}\n*Purpose:* ${formData.purpose}\n\n_Generated a PDF receipt. Please attach it here._`;
+    
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    // 3. Simulate backend/Processing and Redirect
     setTimeout(() => {
       setLoading(false);
       setStep('success');
+      // Redirect in the same tab
+      window.location.href = whatsappUrl;
     }, 1500);
   };
 
@@ -116,28 +161,52 @@ const BookingModal = ({ isOpen, onClose }) => {
                     </div>
                  </div>
 
-                 <div>
-                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Phone Number</label>
-                    <div className="relative">
-                        <Phone className="absolute left-3 top-3 text-slate-400" size={18} />
+                 <div className="grid grid-cols-2 gap-3">
+                    <div>
+                        <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Age</label>
                         <input 
-                            type="tel" 
+                            type="number" 
                             required
-                            className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-300 text-slate-700"
-                            placeholder="+91 98765 43210"
-                            value={formData.phone}
-                            onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                            className="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-300 text-slate-700"
+                            placeholder="Age"
+                            value={formData.age}
+                            onChange={(e) => setFormData({...formData, age: e.target.value})}
                         />
+                    </div>
+                    <div>
+                        <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Phone Number</label>
+                        <div className="relative">
+                            <Phone className="absolute left-3 top-3 text-slate-400" size={18} />
+                            <input 
+                                type="tel" 
+                                required
+                                className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-300 text-slate-700"
+                                placeholder="+91..."
+                                value={formData.phone}
+                                onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                            />
+                        </div>
                     </div>
                  </div>
 
                  <div>
-                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Purpose (Optional)</label>
+                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Full Address</label>
+                    <textarea 
+                        required
+                        className="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-300 text-slate-700 min-h-[60px] resize-none"
+                        placeholder="House No, Street, City..."
+                        value={formData.address}
+                        onChange={(e) => setFormData({...formData, address: e.target.value})}
+                    />
+                 </div>
+
+                 <div>
+                    <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Purpose / Condition</label>
                     <div className="relative">
                         <FileText className="absolute left-3 top-3 text-slate-400" size={18} />
                         <textarea 
                             className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-300 text-slate-700 min-h-[80px] resize-none"
-                            placeholder="Reason for appointment..."
+                            placeholder="Reason for appointment (e.g., Back pain, Post-surgery)..."
                             value={formData.purpose}
                             onChange={(e) => setFormData({...formData, purpose: e.target.value})}
                         />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Stethoscope, BookOpen, Users, Video, ArrowRight } from 'lucide-react';
+import { Activity, Stethoscope, BookOpen, Users, Video, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Card from '../components/Card';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
@@ -25,14 +25,14 @@ const Services = () => {
             {/* Text Content */}
             <div className="lg:w-1/2 text-center lg:text-left animate-fade-in-up">
               <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-xs font-bold tracking-widest uppercase mb-6">
-                World-Class Care
+                HOME VISIT PHYSIOTHERAPY & REHABILITATION
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                Restoring Health, <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Rebuilding Lives.</span>
+                Expert Home Visit Physiotherapy in <br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Chandigarh Tricity</span>
               </h1>
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Experience the perfect blend of advanced medical technology and compassionate, hands-on therapy tailored just for you.
+                ZK Rehab Sphere provides structured, evidence-based physiotherapy and rehabilitation services at home across Chandigarh, Mohali, & Kharar. We focus on neurological, orthopedic, post-operative and chronic pain recovery with personalized care plans.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                  <Button className="shadow-xl shadow-primary/20">
@@ -89,7 +89,7 @@ const Services = () => {
        {/* SERVICES GRID */}
        <section className="py-20 bg-gray-50">
          <div className="container mx-auto px-4">
-           <SectionTitle title="What We Provide" subtitle="Explore our wide range of specialized services." />
+           <SectionTitle title="What We Provide" subtitle="Comprehensive Rehabilitation & Specialized Therapeutic Services at Your Doorstep." />
            
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
              
@@ -104,7 +104,7 @@ const Services = () => {
                       <div className="bg-blue-100 p-2 rounded-lg text-blue-600"><Activity size={24} /></div>
                       <h3 className="text-2xl font-bold text-gray-900">Physiotherapy Care</h3>
                    </div>
-                   <p className="text-gray-600 mb-6 leading-relaxed">Personalized rehabilitation plans delivered in the comfort of your home or our clinic. We focus on restoring mobility and managing pain effectively.</p>
+                   <p className="text-gray-600 mb-6 leading-relaxed">Personalized home-based physiotherapy programs designed for stroke rehabilitation, paralysis, post-surgical recovery, joint replacement rehab, chronic back pain, cervical issues, sports injuries, and mobility restoration.</p>
                    <a href="#" className="font-bold flex items-center gap-2 hover:underline text-blue-600 mt-auto">
                       Learn More <ArrowRight size={18} />
                    </a>
@@ -122,7 +122,7 @@ const Services = () => {
                       <div className="bg-green-100 p-2 rounded-lg text-green-600"><Stethoscope size={24} /></div>
                       <h3 className="text-2xl font-bold text-gray-900">Clinical Guidance</h3>
                    </div>
-                   <p className="text-gray-600 mb-6 leading-relaxed">Expert clinical advice for complex cases. We advocate for evidence-based practices to ensure the best patient outcomes.</p>
+                   <p className="text-gray-600 mb-6 leading-relaxed">Professional assessment and structured rehabilitation planning for complex neurological and orthopedic conditions, ensuring safe and goal-oriented recovery.</p>
                    <a href="#" className="font-bold flex items-center gap-2 hover:underline text-green-600 mt-auto">
                       Learn More <ArrowRight size={18} />
                    </a>
@@ -140,7 +140,7 @@ const Services = () => {
                       <div className="bg-purple-100 p-2 rounded-lg text-purple-600"><BookOpen size={24} /></div>
                       <h3 className="text-2xl font-bold text-gray-900">Rehab Education</h3>
                    </div>
-                   <p className="text-gray-600 mb-6 leading-relaxed">Workshops, seminars, and resources for physiotherapy professionals looking to upgrade their skills and knowledge.</p>
+                   <p className="text-gray-600 mb-6 leading-relaxed">Structured academic resources, clinical insights, and practical learning modules for physiotherapy students and professionals committed to continuous growth.</p>
                    <a href="#" className="font-bold flex items-center gap-2 hover:underline text-purple-600 mt-auto">
                       Learn More <ArrowRight size={18} />
                    </a>
@@ -156,9 +156,9 @@ const Services = () => {
                 <div className="md:w-3/5 p-8 flex flex-col justify-center">
                    <div className="flex items-center gap-3 mb-4">
                       <div className="bg-orange-100 p-2 rounded-lg text-orange-600"><Users size={24} /></div>
-                      <h3 className="text-2xl font-bold text-gray-900">Student Mentorship</h3>
+                      <h3 className="text-2xl font-bold text-gray-900">Academic & Clinical Support</h3>
                    </div>
-                   <p className="text-gray-600 mb-6 leading-relaxed">Dedicated support for students including career guidance, notes sharing, and practical training opportunities.</p>
+                   <p className="text-gray-600 mb-6 leading-relaxed">Guided learning support, case-based discussions, practical insights, and career-focused mentorship for physiotherapy learners.</p>
                    <a href="#" className="font-bold flex items-center gap-2 hover:underline text-orange-600 mt-auto">
                       Learn More <ArrowRight size={18} />
                    </a>
@@ -168,14 +168,52 @@ const Services = () => {
            </div>
          </div>
        </section>
+
+       {/* CONDITIONS WE TREAT SECTION */}
+       <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+             <SectionTitle title="Conditions We Treat" subtitle="Home Visit Services" />
+             
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                {[
+                   "Stroke Rehabilitation",
+                   "Paralysis & Hemiplegia",
+                   "Post-Operative Rehabilitation",
+                   "Total Knee Replacement (TKR) Rehab",
+                   "Total Hip Replacement (THR) Rehab",
+                   "Cervical & Lumbar Spondylosis",
+                   "Slip Disc / Sciatica",
+                   "Frozen Shoulder",
+                   "Osteoarthritis",
+                   "Sports Injuries",
+                   "Ligament Injuries (ACL, PCL)",
+                   "Geriatric Mobility Issues",
+                   "Balance & Fall Prevention",
+                   "Parkinson’s Rehabilitation",
+                   "Bell’s Palsy",
+                   "Chronic Pain Management",
+                   "Muscle Weakness & Deconditioning",
+                   "Post-Fracture Rehabilitation",
+                   "Cupping Therapy (Hijama)"
+                ].map((condition, index) => (
+                   <div key={index} className="flex items-center p-4 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-md transition-shadow group">
+                      <div className="bg-green-100 p-2 rounded-full mr-3 group-hover:bg-green-200 transition-colors">
+                         <CheckCircle2 size={18} className="text-green-600" />
+                      </div>
+                      <span className="font-medium text-slate-700">{condition}</span>
+                   </div>
+                ))}
+             </div>
+          </div>
+       </section>
       
       {/* OPTIONAL CTA */}
       <section className="py-16 bg-white border-t border-gray-100 text-center">
          <div className="container mx-auto px-4">
-             <h2 className="text-2xl font-bold mb-4">Not sure what you need?</h2>
-             <p className="text-gray-600 mb-6">Contact us today and we'll help you find the right path.</p>
+             <h2 className="text-2xl font-bold mb-4">Need Expert Physiotherapy at Home?</h2>
+             <p className="text-gray-600 mb-6">Book your home visit consultation today and begin your structured recovery journey with ZK Rehab Sphere.</p>
              <a href="/contact">
-                <Button className="px-8 bg-gray-900 hover:bg-gray-800">Contact Us</Button>
+                <Button className="px-8 bg-gray-900 hover:bg-gray-800">Book Home Visit Now</Button>
              </a>
          </div>
       </section>

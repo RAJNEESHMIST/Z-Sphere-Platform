@@ -7,9 +7,9 @@ import SectionTitle from '../components/SectionTitle';
 
 import SEO from '../components/SEO';
 import heroImg from '../assets/hero.png';
-import expert1 from '../assets/expert-1.png';
-import expert2 from '../assets/expert-2.png';
-import expert3 from '../assets/expert-3.png';
+import expertMehul from '../assets/expert-mehul.jpeg';
+import expertMani from '../assets/expert-mani.jpeg';
+import expertSazid from '../assets/expert-sazid.jpeg';
 
 const Home = () => {
   return (
@@ -165,17 +165,14 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10 lg:mb-16">
             {[
-              { name: "Dr. Alex Smith", role: "Senior Physiotherapist", img: expert1, desc: "Specialist in sports injuries and orthopedic rehabilitation with over 10 years of experience." },
-              { name: "Dr. Sarah Jones", role: "Clinical Director", img: expert2, desc: "Expert in neurological rehabilitation and patient care management." },
-              { name: "Dr. Mike Chen", role: "Head of Education", img: expert3, desc: "Focuses on student mentorship and advanced manual therapy techniques." },
-              { name: "Dr. Emily White", role: "Pediatric Specialist", img: expert1, desc: "Dedicated to treating developmental disorders in children with compassionate care." },
-              { name: "Dr. James Wilson", role: "Geriatric Specialist", img: expert2, desc: "Improving mobility and quality of life for elderly patients." },
-              { name: "Dr. Lisa Wang", role: "Sports Therapist", img: expert3, desc: "Helping professional athletes recover and return to peak performance." }
+              { name: "Dr. Mehul Kumar", role: "Senior Physiotherapist", img: expertMehul, desc: "Specialist in sports injuries and orthopedic rehabilitation with 3+ years of experience. BPT.", position: "object-top" },
+              { name: "Dr. Mani Bhusan PT", role: "Physiotherapist", img: expertMani, desc: "Expert in neurological rehabilitation and patient care management with 2+ years of experience. BPT.", position: "object-top" },
+              { name: "Dr. Sazid Khan", role: "Physiotherapist", img: expertSazid, desc: "Dedicated physiotherapist with 1 year of experience in patient care and rehabilitation. BPT.", position: "object-center" },
             ].slice(0, 3).map((expert, index) => (
               <Card key={index} className="text-center group p-0 overflow-hidden border-none hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                   <div className="relative h-64 overflow-hidden">
                       <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
-                      <img src={expert.img} alt={expert.name} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                      <img src={expert.img} alt={expert.name} className={`w-full h-full object-cover ${expert.position || 'object-top'} transform group-hover:scale-110 transition-transform duration-700`} />
                   </div>
                   <div className="p-8">
                       <h3 className="text-xl font-bold mb-1 text-primary-dark group-hover:text-primary transition-colors">{expert.name}</h3>
