@@ -9,14 +9,14 @@ import SEO from '../components/SEO';
 import heroImg from '../assets/hero.png';
 import expertMehul from '../assets/expert-mehul.jpeg';
 import expertMani from '../assets/expert-mani.jpeg';
-import expertSazid from '../assets/expert-sazid.jpeg';
+import expertNuman from '../assets/expert-numan.jpeg';
 
 const Home = () => {
   return (
     <div className="w-full">
       <SEO 
         title="ZK Rehab Sphere - Home Visit Physiotherapy" 
-        description="An evidence-based physiotherapy and rehabilitation platform delivering trusted home visit services in Chandigarh, Mohali, Panchkula, Zirakpur & Kharar." 
+        description="An evidence-based physiotherapy and rehabilitation platform delivering trusted home visit services in the Chandigarh Tricity Region." 
       />
       {/* SECTION 1: HERO */}
       <section className="relative pt-4 pb-16 lg:pt-8 lg:pb-32 overflow-hidden">
@@ -39,14 +39,14 @@ const Home = () => {
               ZK Rehab Sphere is a structured rehabilitation platform delivering professional home-visit physiotherapy services, clinical consultation, and evidence-oriented learning resources.
             </p>
             <p className="text-sm sm:text-md text-slate-500 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-150 font-medium">
-              Serving Chandigarh, Mohali, Panchkula, Zirakpur & Kharar
+              Serving Chandigarh Tricity Region | Chandigarh | Mohali | Kharar
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start animate-fade-in-up delay-200 mt-8">
-              <a href="https://wa.me/919430594683" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <a href="https://wa.me/917340820883" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button className="w-full sm:w-auto text-base font-semibold px-6 py-3.5 bg-none bg-[#25D366] text-white shadow-lg shadow-green-500/40 hover:shadow-green-500/60 hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300 border border-transparent hover:border-white/20 ring-4 ring-transparent hover:ring-green-500/20 relative overflow-hidden group">
                   <span className="relative z-10 flex items-center justify-center gap-2">
-                    Book Appointment <span className="text-xs opacity-90 hidden sm:inline">(+91 9430594683)</span>
+                    Book Appointment <span className="text-xs opacity-90 hidden sm:inline">(+91 7340820883)</span>
                   </span>
                   <div className="absolute inset-0 h-full w-full scale-0 rounded-lg transition-all duration-300 group-hover:scale-100 group-hover:bg-white/10"></div>
                 </Button>
@@ -167,7 +167,7 @@ const Home = () => {
             {[
               { name: "Dr. Mehul Kumar", role: "Senior Physiotherapist", img: expertMehul, desc: "Specialist in sports injuries and orthopedic rehabilitation with 3+ years of experience. BPT.", position: "object-top" },
               { name: "Dr. Mani Bhusan PT", role: "Physiotherapist", img: expertMani, desc: "Expert in neurological rehabilitation and patient care management with 2+ years of experience. BPT.", position: "object-top" },
-              { name: "Dr. Sazid Khan", role: "Physiotherapist", img: expertSazid, desc: "Dedicated physiotherapist with 1 year of experience in patient care and rehabilitation. BPT.", position: "object-center" },
+              { name: "Dr.Mohammad Numan PT", role: "Physiotherapist", img: expertNuman, desc: "Dedicated physiotherapist with experience in patient care and rehabilitation. BPT.", position: "object-top" },
             ].slice(0, 3).map((expert, index) => (
               <Card key={index} className="text-center group p-0 overflow-hidden border-none hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                   <div className="relative h-64 overflow-hidden">

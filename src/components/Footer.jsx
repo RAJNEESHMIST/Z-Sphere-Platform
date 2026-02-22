@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Activity, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube, ArrowRight } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -10,26 +11,23 @@ const Footer = () => {
           
           {/* Brand Column */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2">
-               <div className="bg-secondary p-1.5 rounded-lg">
-                 <Activity size={24} className="text-white" />
-               </div>
-              <span className="text-xl font-bold tracking-tight">ZK REHAB SPHERE</span>
+            <div className="flex items-center">
+               <Logo light={true} />
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
               Empowering recovery through advanced diagnostics, personalized therapy, and compassionate care. Your health is our mission.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
+              <a href="https://www.facebook.com/share/18UmYRQRDr/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
+              <a href="https://www.instagram.com/zkrehabsphere?igsh=MXU1c3Myazl1N3dwdg==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
+              <a href="https://www.linkedin.com/company/zk-rehab-sphere/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
+              <a href="https://youtube.com/@zkrehabsphere?si=hDAXPlvQHl5oMzuN" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-colors text-white/70 hover:text-white">
                 <Youtube size={18} />
               </a>
             </div>
@@ -62,11 +60,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-4 text-slate-300 text-sm">
                 <MapPin size={20} className="text-secondary shrink-0 mt-1" />
-                <span>Chandigarh, Mohali, Panchkula,<br/>Zirakpur & Kharar</span>
+                <span>Chandigarh Tricity Region<br/>Chandigarh | Mohali | Kharar</span>
               </li>
               <li className="flex items-center gap-4 text-slate-300 text-sm">
                 <Phone size={20} className="text-secondary shrink-0" />
-                <span>+91 9430594683</span>
+                <span>+91 7340820883</span>
               </li>
               <li className="flex items-center gap-4 text-slate-300 text-sm">
                 <Mail size={20} className="text-secondary shrink-0" />

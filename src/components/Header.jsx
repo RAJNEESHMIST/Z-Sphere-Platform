@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Calendar, HeartPulse } from 'lucide-react';
+import { Menu, X, Phone, Mail, Instagram, Facebook, Youtube } from 'lucide-react';
 import Button from './Button';
 import BookingModal from './BookingModal';
+import Logo from './Logo';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,29 +38,24 @@ const Header = () => {
     <>
       <header 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
+          isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
         }`}
       >
         <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-2 group shrink-0">
-            <div className="w-10 h-10 bg-gradient-to-tr from-blue-600 to-teal-400 rounded-full flex items-center justify-center text-white shadow-lg shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-105">
-              <HeartPulse size={22} className="group-hover:animate-pulse" />
-            </div>
-            <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-slate-800' : 'text-slate-800'}`}>
-              ZK <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">REHAB</span> SPHERE
-            </span>
+          <NavLink to="/" className="flex items-center group shrink-0">
+            <Logo />
           </NavLink>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-8 xl:gap-10">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `text-sm font-medium transition-colors hover:text-primary relative group ${
-                    isActive ? 'text-primary' : 'text-slate-600'
+                  `text-base font-semibold transition-colors hover:text-primary relative group py-2 ${
+                    isActive ? 'text-primary' : 'text-slate-700'
                   }`
                 }
               >
@@ -71,7 +67,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4 shrink-0">
-            <Button size="sm" onClick={() => setIsBookingOpen(true)}>Book Appointment</Button>
+            <Button onClick={() => setIsBookingOpen(true)}>Book Appointment</Button>
           </div>
 
           {/* Mobile Menu Button */}

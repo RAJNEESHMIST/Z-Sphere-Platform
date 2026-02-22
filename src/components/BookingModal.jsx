@@ -72,7 +72,7 @@ const BookingModal = ({ isOpen, onClose }) => {
     doc.save("ZK-Rehab-Appointment.pdf");
 
     // 2. Prepare WhatsApp 
-    const phoneNumber = "919430594683"; // Verified from WhatsAppButton.jsx
+    const phoneNumber = "917340820883"; // Updated to current number
     const message = `*New Appointment Request* \n\n*Name:* ${formData.name}\n*Age:* ${formData.age}\n*Phone:* ${formData.phone}\n*Address:* ${formData.address}\n*Date:* ${selectedSlot?.date}\n*Time:* ${selectedSlot?.time}\n*Purpose:* ${formData.purpose}\n\n_Generated a PDF receipt. Please attach it here._`;
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

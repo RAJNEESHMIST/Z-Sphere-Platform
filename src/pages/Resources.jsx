@@ -20,7 +20,7 @@ const Resources = () => {
          {/* Abstract Background Elements */}
          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl opacity-50"></div>
-
+ 
         <div className="container mx-auto px-4 text-center relative z-10 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Learning & Knowledge Hub</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">

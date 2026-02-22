@@ -9,7 +9,7 @@ import SEO from '../components/SEO';
 // import expert3 from '../assets/expert-3.png';
 import expertMehul from '../assets/expert-mehul.jpeg';
 import expertMani from '../assets/expert-mani.jpeg';
-import expertSazid from '../assets/expert-sazid.jpeg';
+import expertNuman from '../assets/expert-numan.jpeg';
 
 
 const Experts = () => {
@@ -62,14 +62,14 @@ const Experts = () => {
             <Card className="text-center group p-0 overflow-hidden border-none hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                  <div className="relative h-72 overflow-hidden">
                     <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10"></div>
-                     <img src={expertSazid} alt="Dr. Sazid Khan" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                     <img src={expertNuman} alt="Dr. Mohammad Numan PT" className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700" />
                  </div>
                 <div className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-1">Dr. Sazid Khan</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-1">Dr. Mohammad Numan PT</h3>
                     <p className="text-primary font-medium mb-4 uppercase text-sm tracking-wide">Physiotherapist</p>
                     <div className="flex flex-col gap-2 text-gray-600 text-sm mb-6">
                          <div className="flex items-center justify-center gap-2"><Award size={16} className="text-secondary"/> BPT</div>
-                        <div className="flex items-center justify-center gap-2"><Clock size={16} className="text-secondary"/> 1 Year Experience</div>
+                        <div className="flex items-center justify-center gap-2"><Clock size={16} className="text-secondary"/> Experience in core rehabilitation</div>
                     </div>
                      <Button className="w-full bg-slate-100 text-slate-600 hover:bg-primary hover:text-white border-transparent">View Profile</Button>
                 </div>

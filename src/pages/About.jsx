@@ -40,7 +40,10 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Our Vision</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  To be the global standard in accessible, evidence-based rehabilitation, fostering a world where quality care is within everyone's reach.
+                  To build a trusted rehabilitation platform that delivers evidence-based physiotherapy services while making structured clinical knowledge accessible to patients and professionals alike.
+                </p>
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  Our vision is to strengthen rehabilitation standards through science-driven care, ethical practice, and long-term impact.
                 </p>
              </Card>
 

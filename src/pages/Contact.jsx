@@ -26,14 +26,17 @@ const Contact = () => {
             <div className="absolute inset-0 bg-primary/80 z-10 mix-blend-multiply"></div> 
             <img src={heroImg} alt="Contact Us" className="w-full h-full object-cover opacity-60" />
          </div>
-
+ 
          {/* Abstract Background Elements */}
          <div className="absolute inset-0 z-10 opacity-20" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
          
         <div className="container mx-auto px-4 text-center relative z-20 text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-md">Contact ZK Rehab Sphere</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-md">Connect with ZK Rehab Sphere</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto drop-shadow-sm font-medium">
-             Get in touch with us for specialized care and inquiries. We are here to help you.
+             Home Visit Physiotherapy | Clinical Guidance | Educational Resources
+          </p>
+          <p className="text-blue-50 mt-4 max-w-2xl mx-auto opacity-90">
+             Reach out for appointments, professional collaborations, article contributions, or resource-related enquiries.
           </p>
         </div>
       </section>
@@ -45,7 +48,11 @@ const Contact = () => {
             
             {/* LEFT COLUMN: CONTACT INFO */}
             <div className="lg:w-1/3 space-y-8">
-              <SectionTitle title="Get In Touch" subtitle="Reach out via any of these channels." className="text-left" />
+              <SectionTitle 
+                title="Connect with ZK Rehab Sphere" 
+                subtitle="For appointments, professional enquiries, collaborations, and educational support." 
+                className="text-left" 
+              />
               
               <div className="space-y-6">
                 <Card className="flex items-start gap-4 p-6 hover:shadow-md transition-shadow">
@@ -53,8 +60,9 @@ const Contact = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">Service Area</h4>
-                    <p className="text-gray-600">Chandigarh, Mohali, Panchkula, Zirakpur & Kharar</p>
+                    <h4 className="font-bold text-gray-900 text-lg">Service Coverage</h4>
+                    <p className="text-gray-600">Chandigarh Tricity Region</p>
+                    <p className="text-gray-500 text-sm">Chandigarh | Mohali | Kharar</p>
                   </div>
                 </Card>
 
@@ -63,9 +71,9 @@ const Contact = () => {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">Email Us</h4>
+                    <h4 className="font-bold text-gray-900 text-lg">Email Enquiries</h4>
                     <p className="text-gray-600">zkrehabsphere@gmail.com</p>
-                    <p className="text-gray-500 text-sm mt-1">We reply within 24 hours.</p>
+                    <p className="text-gray-500 text-sm mt-1">Response within 24 hours</p>
                   </div>
                 </Card>
 
@@ -74,9 +82,9 @@ const Contact = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">Call Us</h4>
-                    <p className="text-gray-600">+91 9430594683</p>
-                    <p className="text-gray-500 text-sm mt-1">Mon-Fri, 9am - 7pm</p>
+                    <h4 className="font-bold text-gray-900 text-lg">Call for Appointments</h4>
+                    <p className="text-gray-600">+91 7340820883</p>
+                    <p className="text-gray-500 text-sm mt-1">Available by prior appointment</p>
                   </div>
                 </Card>
               </div>
@@ -85,7 +93,7 @@ const Contact = () => {
             {/* RIGHT COLUMN: CONTACT FORM */}
             <div className="lg:w-2/3">
               <Card className="p-8 lg:p-10 shadow-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Consultation or Enquiry</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
