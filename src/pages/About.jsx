@@ -2,7 +2,7 @@ import React from 'react';
 import { Heart, Target, Shield, GraduationCap, Users } from 'lucide-react';
 import Card from '../components/Card';
 import SectionTitle from '../components/SectionTitle';
-import aboutImg from '../assets/about.png';
+import founderImg from '../assets/founder.jpeg';
 
 import SEO from '../components/SEO';
 
@@ -120,7 +120,7 @@ const About = () => {
                 
                 {/* Founder Image Placeholder */}
                 <div className="md:w-1/3 lg:w-1/3 relative min-h-[300px] lg:min-h-full">
-                    <img src={aboutImg} alt="About ZK Rehab" className="absolute inset-0 w-full h-full object-cover opacity-80" />
+                    <img src={founderImg} alt="Sajid Khan - Founder" className="absolute inset-0 w-full h-full object-cover opacity-80" />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent to-transparent"></div>
                 </div>
 

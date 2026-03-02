@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen relative">
         <Header />
-        <main className="flex-grow pt-20">
+        <main className="flex-grow pt-32">
           <AppRoutes />
         </main>
         <Footer />

@@ -4,7 +4,8 @@ import Card from '../components/Card';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/reception-modern.png';
+import physioGym from '../assets/physio-gym.png';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -150,14 +151,17 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* MAP SECTION PLACEHOLDER */}
-      <section className="h-96 w-full bg-gray-200 flex items-center justify-center relative">
-         <div className="text-center text-gray-500">
-            <MapPin size={48} className="mx-auto mb-2 opacity-50" />
-            <h3 className="text-xl font-bold">Google Map Placeholder</h3>
-            <p className="text-sm">Map integration coming in future updates.</p>
+      {/* physiotherapy equipment room image */}
+      <section className="h-[400px] w-full relative overflow-hidden">
+         <img src={physioGym} alt="Physiotherapy Facility" className="w-full h-full object-cover" />
+         <div className="absolute inset-0 bg-primary/20 flex flex-col items-center justify-center text-white text-center p-4">
+            <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+              <MapPin size={48} className="mx-auto mb-4 text-accent" />
+              <h3 className="text-2xl font-bold mb-2">Our Presence</h3>
+              <p className="text-lg font-medium">Chandigarh Tricity Region</p>
+              <p className="text-sm opacity-80">Serving Chandigarh, Mohali, and Kharar with expert care.</p>
+            </div>
          </div>
-         {/* <iframe ... ></iframe> */}
       </section>
 
     </div>

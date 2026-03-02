@@ -11,6 +11,8 @@ const Header = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const location = useLocation();
 
+
+
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +40,7 @@ const Header = () => {
     <>
       <header 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
+          isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-5' : 'bg-transparent py-8'
         }`}
       >
         <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">

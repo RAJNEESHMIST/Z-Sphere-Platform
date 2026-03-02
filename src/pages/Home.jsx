@@ -6,7 +6,7 @@ import Card from '../components/Card';
 import SectionTitle from '../components/SectionTitle';
 
 import SEO from '../components/SEO';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/reception-modern.png';
 import expertMehul from '../assets/expert-mehul.jpeg';
 import expertMani from '../assets/expert-mani.jpeg';
 import expertNuman from '../assets/expert-numan.jpeg';
