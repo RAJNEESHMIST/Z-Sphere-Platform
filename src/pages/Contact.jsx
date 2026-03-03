@@ -4,7 +4,7 @@ import Card from '../components/Card';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
-import heroImg from '../assets/reception-modern.png';
+import heroImg from '../assets/zk-reception.png';
 import physioGym from '../assets/physio-gym.png';
 
 const Contact = () => {

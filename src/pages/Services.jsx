@@ -19,7 +19,7 @@ const Services = () => {
       />
 
       {/* HERO SECTION */}
-      <section className="relative pt-8 pb-16 lg:pt-12 lg:pb-28 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+      <section className="relative pt-4 pb-16 lg:pt-6 lg:pb-28 bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
             {/* Text Content */}

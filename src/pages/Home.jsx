@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Activity, Heart, BookOpen, GraduationCap, ArrowRight, User } from 'lucide-react';
+import { Activity, Stethoscope, BookOpen, Users, ArrowRight, GraduationCap } from 'lucide-react';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import SectionTitle from '../components/SectionTitle';
 
 import SEO from '../components/SEO';
-import heroImg from '../assets/reception-modern.png';
+import heroImg from '../assets/zk-reception.png';
 import expertMehul from '../assets/expert-mehul.jpeg';
 import expertMani from '../assets/expert-mani.jpeg';
 import expertNuman from '../assets/expert-numan.jpeg';
@@ -19,7 +19,7 @@ const Home = () => {
         description="An evidence-based physiotherapy and rehabilitation platform delivering trusted home visit services in the Chandigarh Tricity Region." 
       />
       {/* SECTION 1: HERO */}
-      <section className="relative pt-4 pb-16 lg:pt-8 lg:pb-32 overflow-hidden">
+      <section className="relative pt-0 pb-16 lg:pt-4 lg:pb-32 overflow-hidden">
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-accent/10 rounded-full blur-3xl opacity-50"></div>
@@ -116,7 +116,7 @@ const Home = () => {
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent opacity-50"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <SectionTitle title="Our Core Services" subtitle="Integrated rehabilitation services for patients, learners, and professionals." className="mb-10 lg:mb-16" />
+          <SectionTitle title="What We Provide" subtitle="Comprehensive Rehabilitation & Specialized Therapeutic Services at Your Doorstep." className="mb-10 lg:mb-16" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <Card className="hover:-translate-y-2 group p-6">
@@ -124,16 +124,16 @@ const Home = () => {
                 <Activity size={28} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-slate-800">Physiotherapy Care</h3>
-              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Personalized treatment plans for pain management and mobility recovery.</p>
+              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Personalized home-based physiotherapy programs designed for stroke rehabilitation, paralysis, post-surgical recovery, joint replacement rehab, chronic back pain, cervical issues, sports injuries, and mobility restoration.</p>
               <Link to="/services" className="text-blue-600 font-semibold text-sm hover:underline flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <ArrowRight size={16}/></Link>
             </Card>
 
             <Card className="hover:-translate-y-2 group p-6">
               <div className="w-14 h-14 bg-green-500/10 rounded-xl flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
-                <Heart size={28} />
+                <Stethoscope size={28} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-slate-800">Clinical Guidance</h3>
-              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Expert advice and consultation for complex rehabilitation cases.</p>
+              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Professional assessment and structured rehabilitation planning for complex neurological and orthopedic conditions, ensuring safe and goal-oriented recovery.</p>
                <Link to="/services" className="text-green-600 font-semibold text-sm hover:underline flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <ArrowRight size={16}/></Link>
             </Card>
 
@@ -142,16 +142,16 @@ const Home = () => {
                 <BookOpen size={28} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-slate-800">Rehab Education</h3>
-              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Workshops and seminars for professionals to stay updated.</p>
+              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Structured academic resources, clinical insights, and practical learning modules for physiotherapy students and professionals committed to continuous growth.</p>
                <Link to="/services" className="text-purple-600 font-semibold text-sm hover:underline flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <ArrowRight size={16}/></Link>
             </Card>
 
             <Card className="hover:-translate-y-2 group p-6">
                <div className="w-14 h-14 bg-orange-500/10 rounded-xl flex items-center justify-center text-orange-600 mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
-                <GraduationCap size={28} />
+                <Users size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-800">Student Support</h3>
-              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Resources, mentorship, and career guidance for physiotherapy students.</p>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">Academic & Clinical Support</h3>
+              <p className="text-slate-600 mb-6 text-sm leading-relaxed">Guided learning support, case-based discussions, practical insights, and career-focused mentorship for physiotherapy learners.</p>
                <Link to="/services" className="text-orange-600 font-semibold text-sm hover:underline flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <ArrowRight size={16}/></Link>
             </Card>
           </div>
